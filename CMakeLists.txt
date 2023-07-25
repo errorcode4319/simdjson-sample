@@ -10,5 +10,4 @@ add_compile_options(-O2 -Wno-dev)
 add_subdirectory(simdjson)
 
 add_executable(sample src/main.cpp)
-target_include_directories(sample PRIVATE simdjson/include)
 target_link_libraries(sample PRIVATE simdjson)
